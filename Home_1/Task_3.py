@@ -12,3 +12,9 @@ if first_sum == second_sum:
     print("Билет счастлиый!")
 else:
     print("В следующий раз обязательно повезет!")
+
+# happy_num = (input("Введите номер билета: "))
+# first_sum = happy_num [:3]
+# print(first_sum)
+# second_sum = happy_num [3:]
+# print(second_sum)
