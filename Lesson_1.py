@@ -54,8 +54,9 @@ print(-(-m//n))"""
 # с григорианским календарем, год является високосным,
 # если его номер кратен 4, но не кратен 100, а также если он кратен 400.
 
-year = int(input())
-if year % 4 == 0 and year % 100 != 100 or year % 400 == 0:
-    print("yes")
-else:
-    print("no")
+# year = int(input())
+# if year % 4 == 0 and year % 100 != 100 or year % 400 == 0:
+#     print("yes")
+# else:
+#     print("no")
+
