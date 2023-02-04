@@ -13,6 +13,7 @@ import os
 
 os.system('cls')
 
+# Вариант 1
 m = int(input('Введите количество элементов в массиве: '))
 n = list()
 for i in range(m):
@@ -24,18 +25,8 @@ a = int(input('Введите значение элемента: '))
 
 print(n.count(a))
 
+# Вариант 2
 
+# n = list(range(1, (int(input('Введите количество элементов в массиве: ')) + 1)))
 
-
-
-
-
-# n = list(input())
-# a = int(input('Введите значение элемента: '))
-# sum = 0
-# if len(n) == m:
-#     for i in len(n):
-#         if n[i] == a:
-#             sum += sum + 1
-#     i += 1
-# print(f"{n}, \n{sum}")
+# print(*n, '\n',n.count(int(input('Введите значение элемента: '))))
