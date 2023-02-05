@@ -89,13 +89,13 @@
 # Вторая строка содержит N чисел, записанных на новой
 # строчке каждое. Здесь каждое число – это масса соответствующего арбуза
 
-# total = int(input())
-# max = min = int(input('вес первого: '))
+total = int(input())
+max = min = int(input('вес первого: '))
 
-# for _ in range(total - 1):
-#     count = int(input())
-#     if count > max:
-#         max = count
-#     if count < min:
-#         min = count    
-# print(min, max)
+for _ in range(total - 1):
+    count = int(input())
+    if count > max:
+        max = count
+    if count < min:
+        min = count    
+print(min, max)

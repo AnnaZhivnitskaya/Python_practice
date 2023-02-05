@@ -29,4 +29,4 @@ print(n.count(a))
 
 # n = list(range(1, (int(input('Введите количество элементов в массиве: ')) + 1)))
 
-# print(*n, '\n',n.count(int(input('Введите значение элемента: '))))
+# print(*n,'\n',n.count(int(input('Введите значение элемента: '))))
