@@ -17,6 +17,29 @@
 # Необходимо сдвинуть всю последовательность
 # (сдвиг - циклический) на K элементов вправо,
 # K – положительное число.
+import os
+
+os.system('cls')
+
+# n = int(input('Введите количество элементов: '))
+# list_1 = list()
+# for i in list_1:
+#     a = int(input)
+#     list_1.append(a)
+# print(*list_1)
+
+list_1 = [1, 2, 3, 4, 5, 6]
+num = int(input('Введите шаг сдвига: '))
+temp = 0
+i = 1 #если положит единица, то сдвиг вправо,
+            # если -1, то сдвиг влево
+while i <= num:
+    temp = list_1.pop()
+    list_1.insert(0, temp)
+    i +=1
+print(list_1)
+
+
 # решение 1
 # list_nums = [1, 2, 3, 4, 5]
 # k = 7
@@ -49,6 +72,6 @@
 # Напишите программу, которая подсчитает
 # количество элементов массива, больших
 # предыдущего (элемента с предыдущим номером)
-list_nums = [0, -1, 5, 2, 3]
+# list_nums = [0, -1, 5, 2, 3]
 
-print (sum([1 for i in range(1, len(list_nums)) if list_nums[i]>list_nums[i-1]]))
+# print (sum([1 for i in range(1, len(list_nums)) if list_nums[i]>list_nums[i-1]]))
