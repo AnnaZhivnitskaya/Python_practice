@@ -11,3 +11,9 @@ d = int(input('Введите разность между элементами: 
 
 print(*range(a, a + d * (n - 1) + 1, d)) 
 # здесь * исп-ся в качестве итеративной операции, т.е. распаковывает все итерации
+
+a1 = int(input()) 
+d = int(input()) 
+n = int(input()) 
+for i in range(n): 
+    print(a1 + i * d)
