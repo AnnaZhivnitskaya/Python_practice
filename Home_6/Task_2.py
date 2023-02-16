@@ -15,10 +15,11 @@ print(arr)
 mini = int(input())
 maxi = int(input())
 change = []
-for i in range(len(arr)-1): 
+for i in range(len(arr)): 
     if maxi >= arr[i] >= mini:
         change.append(i)
 print(change)
+
 
 list_1 = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7] 
 min_number = int(input()) 
