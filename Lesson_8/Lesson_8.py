@@ -1,54 +1,6 @@
-from os import path
+import os
 
-file_base = "base.txt"
-all_data = []
-id = 0
-
-if not path.exists(file_base):
-    with open(file_base, "w", encoding="utf-8") as _:
-        pass
-
-
-def read_records():
-    global all_data, id
-
-    with open(file_base) as f:
-        all_data = [i.strip() for i in f]
-        id = all_data[-1][0]
-        return all_data
-
-
-def show_all():
-    result = read_records()
-    print(*result
-          , sep="\n")
-
-
-def main_menu():
-    play = True
-    while play:
-        answer = input("Phone book:\n"
-                       "1. Show all records\n"
-                       "2. Add a record\n"
-                       "3. Search a record\n"
-                       "4. Exit\n")
-        if answer case "1":
-            show_all()
-        elif answer case "2":
-                pass
-        elif answer case "3":
-                pass
-        elif answer case "4":
-                play = False
-        elif answer case _:
-                print("Try again!\n")
-
-
-main_menu()
-
-
-
-
+os.system('cls')
 from os import path
 
 file_base = "base.txt"
@@ -98,23 +50,22 @@ def main_menu():
     while play:
         read_records()
         answer = input("Phone book:\n"
-                       "1. Show all records\n"
-                       "2. Add a record\n"
-                       "3. Search a record\n"
-                       "4. Delete\n"
-                       "5. Exit\n")
-        match answer:
-            case "1":
+                    "1. Show all records\n"
+                    "2. Add a record\n"
+                    "3. Search a record\n"
+                    "4. Delete\n"
+                    "5. Exit\n")
+        if answer  == "1":
                 show_all()
-            case "2":
+        elif answer == "2":
                 add_new_contact()
-            case "3":
+        elif answer == "3":
                 pass
-            case "4":
+        elif answer == "4":
                 pass
-            case "5":
+        elif answer == "5":
                 play = False
-            case _:
+        else:
                 print("Try again!\n")
 
 
