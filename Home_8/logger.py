@@ -11,12 +11,12 @@ def input_data():
     adress = adress_data()
         
     with open('phone.txt', 'a', encoding='utf-8') as file:
-        text_info = file.write(int(input(f'{surname} {name} {patronymic}, {phone}, {adress}')))
+        text_info = file.write(f'{surname} {name} {patronymic}, {phone}, {adress}\n')
         return text_info
 
 def print_data():
     with open('phone.txt', 'r', encoding='utf-8') as text:
-        text.readlines()
+        print(*text.readlines(), sep='\n')
 
 def change_data():
     change_num = int(input('Введите номер записи для изменения: '))
